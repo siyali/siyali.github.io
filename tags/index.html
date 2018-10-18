@@ -102,6 +102,7 @@
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
+
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>
@@ -111,6 +112,7 @@
             </button>
             <a class="navbar-brand" href="/">Siya Li</a>
         </div>
+
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <!-- Known Issue, found by Hux:
@@ -132,14 +134,14 @@
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -155,6 +157,10 @@
             </div>
         </div>
         <!-- /.navbar-collapse -->
+        <div id="site_search" class="main-content-wrap">
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control input--xlarge" autofocus="autofocus" style="width:auto"/>
+            <div id="local-search-result" style="background-color:rgba(255,255,255,1);width:60%"></div>
+        </div>
     </div>
     <!-- /.container -->
 </nav>
@@ -185,6 +191,17 @@
             $navbar.className += " in";
         }
     }
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/js/search.js"></script> 
+<script type="text/javascript">      
+     var search_path = "search.xml";
+     if (search_path.length == 0) {
+        search_path = "search.xml";
+     }
+     var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
 </script>
 
 
