@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>Notes on Technical Interview Prep</title>
+      <link href="/null/readingNotesInterviewQ/"/>
+      <url>/null/readingNotesInterviewQ/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>Note: WIP</p></blockquote><h1>Problems</h1><blockquote><p>Q1 - p24 - write a function for the assignment operator on class CMyString</p></blockquote><p>(1) The return type of this function should be a pointer to CMyString, i.e., return *this;<br>(2) To improve efficiency, the formal parameter should be a constant reference instead of a class instance<br>(3) Free up the current space (otherwise memory leak)<br>(4) Check equality (avoid freeing up the space of the copied instance)<br>(5) [Optimized] Exceptional safety</p><blockquote><p>Q2 - p31 - design a class Singleton which only allows one instance</p></blockquote><p>(1) [Restricted to single thread]A private constructor + a static instance<br>(2) [Inefficient under multi-thread] Init/add a lock before checking null<br>(3) [Improved] Wrap the current lock with another check for null instance<br>(4) [Semi-optm but C#-specific] A public static constructor<br>(5) [Optimized but C#-specific] Embed in another nested class only called upon Singleton5.Instance</p><blockquote><p>Q3 - p38 - look up a value in a two-d array with the rule left &lt; right, top &lt; bottom</p></blockquote><p>(1) [Key Idea] Exclude one column/row at each comparison<br>(2) [Key Idea] For each comparison, start at either the upper right corner or the lower left one.<br>(3) [Hint] To access the two-d array, from matrix[], use an index of row*columns + column</p><h1>Summary</h1><blockquote><p>p24 - C++</p></blockquote><p>s1. Why compiler does not allow parameters in the copy constructor to be passed by value<br>[infinite loop and stack overflow]</p><blockquote><p>p28 - C#</p></blockquote><p>s2. What is the difference between struct and class in C++<br>[struct/public vs class/private for member functions and variables]</p><blockquote><p>p37 - Data Structure</p></blockquote><p>s3. How does vector in C++ standard library work<br>[copy previous data to a new array of twice as the size before; free up the old array]</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 剑指offer笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>故事的开始</title>
       <link href="/null/diary101718/"/>
       <url>/null/diary101718/</url>

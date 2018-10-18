@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          Siya Li | Blog
+          Notes on Technical Interview Prep - Siya Li | Blog
         
     </title>
 
-    <link rel="canonical" href="https://siyali.github.io/tags/Setup/">
+    <link rel="canonical" href="https://siyali.github.io/null/readingNotesInterviewQ/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -69,8 +69,8 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('/img/header_img/archives-widget.jpg')
-            /*page*/
+            background-image: url('/img/article_header/notes_prep.jpg')
+            /*post*/
         
     }
     
@@ -83,10 +83,18 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
-                    <div class="site-heading">
-                        <h1>Siya Li</h1>
-                        <!--<hr class="small">-->
-                        <span class="subheading">Wild Spirit, which art moving everywhere - Percy Bysshe Shelley</span>
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#剑指offer笔记" title="剑指offer笔记">剑指offer笔记</a>
+                            
+                        </div>
+                        <h1>Notes on Technical Interview Prep</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Siya Li on
+                            2018-10-18
+                        </span>
                     </div>
                 
 
@@ -206,252 +214,164 @@
 
 
     <!-- Main Content -->
-    <!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
+    <!-- Modify by Yu-Hsuan Yen -->
 
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-                
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <!-- 归档列表 -->
-            
-            
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-             <!-- 归档列表 -->
+                <blockquote>
+<p>Note: WIP</p>
+</blockquote>
+<h1>Problems</h1>
+<blockquote>
+<p>Q1 - p24 - write a function for the assignment operator on class CMyString</p>
+</blockquote>
+<p>(1) The return type of this function should be a pointer to CMyString, i.e., return *this;<br>
+(2) To improve efficiency, the formal parameter should be a constant reference instead of a class instance<br>
+(3) Free up the current space (otherwise memory leak)<br>
+(4) Check equality (avoid freeing up the space of the copied instance)<br>
+(5) [Optimized] Exceptional safety</p>
+<blockquote>
+<p>Q2 - p31 - design a class Singleton which only allows one instance</p>
+</blockquote>
+<p>(1) [Restricted to single thread]A private constructor + a static instance<br>
+(2) [Inefficient under multi-thread] Init/add a lock before checking null<br>
+(3) [Improved] Wrap the current lock with another check for null instance<br>
+(4) [Semi-optm but C#-specific] A public static constructor<br>
+(5) [Optimized but C#-specific] Embed in another nested class only called upon Singleton5.Instance</p>
+<blockquote>
+<p>Q3 - p38 - look up a value in a two-d array with the rule left &lt; right, top &lt; bottom</p>
+</blockquote>
+<p>(1) [Key Idea] Exclude one column/row at each comparison<br>
+(2) [Key Idea] For each comparison, start at either the upper right corner or the lower left one.<br>
+(3) [Hint] To access the two-d array, from matrix[], use an index of row*columns + column</p>
+<h1>Summary</h1>
+<blockquote>
+<p>p24 - C++</p>
+</blockquote>
+<p>s1. Why compiler does not allow parameters in the copy constructor to be passed by value<br>
+[infinite loop and stack overflow]</p>
+<blockquote>
+<p>p28 - C#</p>
+</blockquote>
+<p>s2. What is the difference between struct and class in C++<br>
+[struct/public vs class/private for member functions and variables]</p>
+<blockquote>
+<p>p37 - Data Structure</p>
+</blockquote>
+<p>s3. How does vector in C++ standard library work<br>
+[copy previous data to a new array of twice as the size before; free up the old array]</p>
 
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2018">
-                    <span class="tag-text">2018</span>
-                </span>
-                <ul>
                 
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    10-18
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/null/readingNotesInterviewQ/" style="color: #0085a1">
-                        <span>
-                            Notes on Technical Interview Prep
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    10-17
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/null/diary101718/" style="color: #0085a1">
-                        <span>
-                            故事的开始
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    10-16
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/null/hello_hexo/" style="color: #0085a1">
-                        <span>
-                            Hello Hexo!
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/null/diary101718/" data-toggle="tooltip" data-placement="top" title="故事的开始">Next Post &rarr;</a>
+                        </li>
+                    
                 </ul>
-            </div>
-            
-
-
-        </div>
-    </div>
-</div>
 
                 <br>
-
+                
                 <!-- require APlayer -->
                 
 
-                <!-- 如果开启评论功能 -->
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#剑指offer笔记" title="剑指offer笔记">剑指offer笔记</a>
+                        
+                    </div>
+                </section>
                 
             </div>
-
-          <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Featured Tags -->
-
-<section>
-    <!-- no hr -->
-    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-    <div class="tags">
-        
-            
-            <a href="/tags/#随笔" title="随笔" rel="1">随笔</a>
-            
-        
-            
-            <a href="/tags/#Setup" title="Setup" rel="1">Setup</a>
-            
-        
-            
-            <a href="/tags/#剑指offer笔记" title="剑指offer笔记" rel="1">剑指offer笔记</a>
-            
-        
+        </div>
     </div>
-</section>
+</article>
 
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-    <h5><a href="/about/">ABOUT ME</a></h5>
-    <div class="short-about">
 
-        
-            <img id = "avatar_pic" src="/img/me.jpg" />
-        
 
-        
-            <p>#travel#photography#foodie</p>
-        
 
-        <!-- SNS Link -->
-        <ul class="list-inline">
-            
-            
-            
 
-            
 
-            
-                <li>
-                    <a target="_blank" href="https://www.facebook.com/siyali.em">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
 
-            
-                <li>
-                    <a target="_blank"  href="https://github.com/siyali">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-            
-            
-                <li>
-                    <a target="_blank"  href="https://instagram.com/siyali.em">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
 
-            
-                <li>
-                    <a target="_blank"  href="https://www.linkedin.com/in/siyali-em">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-        </ul>
-    </div>
-</section>
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
-        <hr>
-    
-        
-  <h5>RECENT POSTS</h3>
-  <div class="widget">
-    <ul>
-      
-        <li>
-          <a href="/null/readingNotesInterviewQ/">Notes on Technical Interview Prep</a>
-        </li>
-      
-        <li>
-          <a href="/null/diary101718/">故事的开始</a>
-        </li>
-      
-        <li>
-          <a href="/null/hello_hexo/">Hello Hexo!</a>
-        </li>
-      
-    </ul>
-  </div>
-
-        <hr>
-    
-        <!-- Friends Blog -->
-
-<h5>FRIENDS</h5>
-<ul class="list-inline">
-
-    
-        <li><a href="http://www.sail.name" target="_blank">Sail</a></li>
-    
-</ul>
-
-        <hr>
-    
-        
-    <h5>ARCHIVES</h5>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">3</span></li></ul>
-    </div>
-
-        <hr>
-    
-</div>
-
-        
-    </div>
-</div>
 
 
     <!-- Footer -->
