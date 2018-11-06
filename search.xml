@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>夜归人</title>
+      <link href="/null/diary110618/"/>
+      <url>/null/diary110618/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>你可知这百年爱人只能陪半途。你且迷这风浪永远二十赶朝暮。——《记昨日书》</p></blockquote><p>如果有一天我不再流浪<br>不是因为突然思乡<br>不是难忍孤身漫长<br>未来生活更没有失去向往<br>而是我终于明白心中所想</p><p>如果有一天我不再逃避<br>不是因为勇敢机智<br>不是坦然接受分离<br>幡然醒悟也没有来得太迟<br>而是我终于学会面对现实</p><p>我曾跟随过许多队伍<br>也曾沉迷自我放逐<br>不曾读万卷书<br>但行过万里旅途<br>如今踏上归路<br>但愿摆脱心里的束缚</p><p>三年匆匆如一梦，来路无所畏惧，怀满腔热血，向往远方和告别；<br>今朝曲终离梁园，归途身穿铠甲，拥一心温柔，只因故乡在那头。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>为了一句话就想写更新</title>
       <link href="/null/diary101918/"/>
       <url>/null/diary101918/</url>
@@ -24,7 +41,7 @@
       <link href="/null/readingNotesInterviewQ/"/>
       <url>/null/readingNotesInterviewQ/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>Note: WIP</p></blockquote><h1>Problems</h1><blockquote><p>Q1 - p24 - write a function for the assignment operator on class CMyString</p></blockquote><p>(1) The return type of this function should be a pointer to CMyString, i.e., return *this;<br>(2) To improve efficiency, the formal parameter should be a constant reference instead of a class instance<br>(3) Free up the current space (otherwise memory leak)<br>(4) Check equality (avoid freeing up the space of the copied instance)<br>(5) [Optimized] Exceptional safety</p><blockquote><p>Q2 - p31 - design a class Singleton which only allows one instance</p></blockquote><p>(1) [Restricted to single thread]A private constructor + a static instance<br>(2) [Inefficient under multi-thread] Init/add a lock before checking null<br>(3) [Improved] Wrap the current lock with another check for null instance<br>(4) [Semi-optm but C#-specific] A public static constructor<br>(5) [Optimized but C#-specific] Embed in another nested class only called upon Singleton5.Instance</p><blockquote><p>Q3 - p38 - look up a value in a two-d array with the rule left &lt; right, top &lt; bottom</p></blockquote><p>(1) [Key Idea] Exclude one column/row at each comparison<br>(2) [Key Idea] For each comparison, start at either the upper right corner or the lower left one.<br>(3) [Hint] To access the two-d array, from matrix[], use an index of row*columns + column</p><h1>Summary</h1><blockquote><p>p24 - C++</p></blockquote><p>s1. Why compiler does not allow parameters in the copy constructor to be passed by value<br>[infinite loop and stack overflow]</p><blockquote><p>p28 - C#</p></blockquote><p>s2. What is the difference between struct and class in C++<br>[struct/public vs class/private for member functions and variables]</p><blockquote><p>p37 - Data Structure</p></blockquote><p>s3. How does vector in C++ standard library work<br>[copy previous data to a new array of twice as the size before; free up the old array]</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>Note: WIP</p></blockquote><h1>Problems</h1><blockquote><p>Q1 - p24 - write a function for the assignment operator on class CMyString</p></blockquote><p>(1) The return type of this function should be a pointer to CMyString, i.e., return *this;<br>(2) To improve efficiency, the formal parameter should be a constant reference instead of a class instance<br>(3) Free up the current space (otherwise memory leak)<br>(4) Check equality (avoid freeing up the space of the copied instance)<br>(5) [Optimized] Exceptional safety</p><blockquote><p>Q2 - p31 - design a class Singleton which only allows one instance</p></blockquote><p>(1) [Restricted to single thread]A private constructor + a static instance<br>(2) [Inefficient under multi-thread] Init/add a lock before checking null<br>(3) [Improved] Wrap the current lock with another check for null instance<br>(4) [Semi-optm but C#-specific] A public static constructor<br>(5) [Optimized but C#-specific] Embed in another nested class only called upon Singleton5.Instance</p><blockquote><p>Q3 - p38 - look up a value in a two-d array with the rule left &lt; right, top &lt; bottom</p></blockquote><p>(1) [Key Idea] Exclude one column/row at each comparison<br>(2) [Key Idea] For each comparison, start at either the upper right corner or the lower left one.<br>(3) [Hint] To access the two-d array, from matrix[], use an index of row*columns + column</p><blockquote><p>Q4 -</p></blockquote><h1>Summary</h1><blockquote><p>p24 - C++</p></blockquote><p>s1. Why compiler does not allow parameters in the copy constructor to be passed by value<br>[infinite loop and stack overflow]</p><blockquote><p>p28 - C#</p></blockquote><p>s2. What is the difference between struct and class in C++<br>[struct/public vs class/private for member functions and variables]</p><blockquote><p>p37 - Data Structure</p></blockquote><p>s3. How does vector in C++ standard library work<br>[copy previous data to a new array of twice as the size before; free up the old array]</p>]]></content>
       
       
       
